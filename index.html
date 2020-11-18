@@ -1,70 +1,47 @@
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mat Smz Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-<body class="position-fixed d-flex flex-column text-white bg-red">
-    <header class="page-header">
-      <nav class="d-flex justify-content-between">
-        <a href="" class="logo"><strong>Mat Smz</strong></a>
-        <ul class="d-flex">
-          <li>
-            <a href="">Skills</a>
-          </li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mat Smz Portfolio</title>
+   
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="all">
 
-      </nav>
-    </header>
-    <h1 class="position-absolute w-100 text-center heading">
-      Web Developer
-    </h1>
-  <!-- <a class="position-absolute contact" href="@gmail.com">Contact</a> -->
-    <section class="position-absolute d-flex align-items-center justify-content-center text-black bg-white skills-section" data-slideIn="to-top">
-      <button class="position-absolute skills-close" aria-label="Close Skills Section">✕</button>
-      <div class="d-flex chart-wrapper">
-        <ul class="chart-levels">
-          <li>Expert</li>
-          <li>Advanced</li>
-          <li>Intermediate</li>
-          <li>Beginner</li>
-          <li>Novice</li>
-        </ul>
-        <ul class="d-flex justify-content-around align-items-end flex-grow-1 text-center bg-black chart-skills">
-          <li class="position-relative bg-red" data-height="80%">
-            <span class="position-absolute w-100">Html</span>
-          </li>
-          <li class="position-relative bg-red" data-height="70%">
-            <span class="position-absolute w-100">Css</span>
-          </li>
-          <li class="position-relative bg-red" data-height="65%">
-            <span class="position-absolute w-100">JavaScript</span>
-          </li>
-          <li class="position-relative bg-red" data-height="60%">
-            <span class="position-absolute w-100">Git</span>
-          </li>
-          <li class="position-relative bg-red" data-height="60%">
-            <span class="position-absolute w-100">ReactJs</span>
-          </li>
-        </ul>
+    <header class="header">
+        <div class="header-flex">
+          <h1 class="header-logo">matsmz</h1>
+          <nav class="no-mobile">
+          <a href="#" class="current">portfolio</a> •
+          <a href="mailto:mathieu.smolarz@gmail.com">contact</a> •
+          <a href="https://www.linkedin.com/in/mathieu-smz-905b1197/">linkedIn</a> 
+          </nav>
+          <nav class="mobile">
+            <a href="#footer-nav">≡</a>
+          </nav> 
+        </div>
+      </header>
+      <div class="grid">
+        <div class="about">Mathieu Smolarz</em><br>
+          <br>
+           Développeur <strong>frontend</strong><br><br> Web @ Mobile <br><br>html / css / js / react / react native</div>
+        <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/6100ff/fff&text=%20" alt="affiche"><span class="a-txt">responsive design</span></a>
+        <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/00B3ED/fff&text=%20" alt="site   "><span class="a-txt">CSS animation</span></a>
+        <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FFDE13/fff&text=%20" alt="affiche"><span class="a-txt">landing Page</span></a>
+        <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FF5046/fff&text=%20" alt="site   "><span class="a-txt">to-do app</span></a>
+        <a href="#" class="l a-img-txt"><img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20" alt="app    "><span class="a-txt">authentification</span></a>
+        <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" alt="affiche"><span class="a-txt">API Rest</span></a>
+        <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" alt="site   "><span class="a-txt">Exposition Data</span></a>
+
       </div>
-      <script>
-        const skillsLink = document.querySelector(".page-header li:nth-child(1) a");
-const skillsClose = document.querySelector(".skills-close");
-const windowOpened = "window-opened";
-
-skillsLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.body.classList.toggle(windowOpened);
-});
-
-skillsClose.addEventListener("click", () => {
-  document.body.classList.toggle(windowOpened);
-});
-
-        </script>
-    </section>
-  </body>
-  
-  
+    
+      <footer class="footer">
+        <nav id="footer-nav">
+          <a href="#" class="current">portfolio</a>
+          <a href="mailto:mathieu.smolarz@gmail.com">contact</a>
+          <a href="https://www.linkedin.com/in/mathieu-smz-905b1197/">linkedIn</a> 
+        </nav>
+      </footer>
+    
+</body>
+</html>
