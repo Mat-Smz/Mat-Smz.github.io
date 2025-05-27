@@ -9,16 +9,19 @@
   <style>
     .grid-sides {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: var(--spacing);
       margin-top: 4rem;
-      align-items: start;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .side-left, .side-right {
       display: flex;
       flex-direction: column;
       gap: var(--spacing);
+      align-items: center;
     }
 
     .side-block {
@@ -28,9 +31,8 @@
       text-align: center;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      word-break: break-word;
       width: 240px;
-      min-height: 100px;
+      height: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,9 +50,6 @@
       .grid-sides {
         grid-template-columns: 1fr;
       }
-      .side-left, .side-right {
-        align-items: center;
-      }
     }
   </style>
 </head>
@@ -59,9 +58,9 @@
     <h1>matsmz</h1>
     <p class="subheading">développeur fullstack // banques et fintec</p>
     <ul>
-      <li>HTML / CSS / Bootstrap</li>
+      <li>html / css / bootstrap</li>
       <li>JavaScript / React / React Native</li>
-      <li>PHP / MySQL / Symfony</li>
+      <li>php / MySQL / Symfony</li>
       <li>Git / Docker</li>
       <li>OSINT / Analyse SOC</li>
       <li>Méthodologie Agile / Scrum</li>
@@ -104,16 +103,14 @@
 
     <div class="grid-sides">
       <div class="side-left">
+        <div class="side-block">JS Fullstack<br><small>M2i & Dawan – 2021</small></div>
         <div class="side-block">Développement Web & Mobile<br><small>Reacteur – 2020</small></div>
-        <div class="side-block">Cybersécurité / Fullstack<br><small>M2i & Dawan – 2021</small></div>
         <div class="side-block">Géopolitique / Numérique<br><small>IRIS & GEM – 2014-2015</small></div>
       </div>
 
-      <div></div>
-
       <div class="side-right">
-        <div class="side-block">Mata Capital<br><small>Fullstack Symfony – 2021-2025</small></div>
-        <div class="side-block">Okate<br><small>Dev junior – 2020</small></div>
+        <div class="side-block">Mata Capital<br><small>Fullstack JS / Symfony – 2021-2025</small></div>
+        <div class="side-block">Okate<br><small>développeur junior – 2020</small></div>
         <div class="side-block">French Pulp<br><small>Éditeur / Directeur littéraire</small></div>
       </div>
     </div>
