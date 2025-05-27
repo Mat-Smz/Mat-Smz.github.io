@@ -1,45 +1,134 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mat Smz Portfolio</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body class="all">
-    <header class="header">
-        <div class="header-flex">
-          <h1 class="header-logo">matsmz</h1>
-          <nav class="no-mobile">
-          <a href="#" class="current">portfolio</a> •
-          <a href="mailto:mathieu.smolarz@gmail.com">contact</a> •
-          <a href="https://www.linkedin.com/in/mathieu-smz-905b1197/">linkedIn</a> 
-          </nav>
-          <nav class="mobile">
-            <a href="#footer-nav">≡</a>
-          </nav> 
-        </div>
-      </header>
-      <div class="grid">
-        <div class="about">Mathieu Smolarz</em><br>
-          <br>
-           Développeur <strong>frontend</strong><br><br> Web @ Mobile <br><br>html / css / js / react / react native</div>
-        <a href="https://www.google.com" class="m a-img-txt"><img src="https://dummyimage.com/400x600/6100ff/fff&text=%20" alt="affiche"><span class="a-txt">Responsive design</span></a>
-        <a href="https://www.google.com" class="s a-img-txt"><img src="https://dummyimage.com/400x288/00B3ED/fff&text=%20" alt="site   "><span class="a-txt">CSS animation</span></a>
-        <a href="https://www.google.com" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FFDE13/fff&text=%20" alt="affiche"><span class="a-txt">Landing Page</span></a>
-        <a href="https://www.google.com" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FF5046/fff&text=%20" alt="site   "><span class="a-txt">Web app with reactJS</span></a>
-        <a href="https://www.google.com" class="l a-img-txt"><img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20" alt="app    "><span class="a-txt">Mobile App with ReactNative</span></a>
-        <a href="https://www.google.com" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" alt="affiche"><span class="a-txt">API Rest</span></a>
-        <a href="https://www.google.com" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" alt="site   "><span class="a-txt">Exposition Data</span></a>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de matsmz, développeur fullstack // banque et FinTec" />
+  <title>matsmz - développeur fullstack</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .grid-sides {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: var(--spacing);
+      margin-top: 4rem;
+      align-items: start;
+    }
 
+    .side-left, .side-right {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing);
+    }
+
+    .side-block {
+      padding: 1.2rem;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      word-break: break-word;
+      width: 240px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .side-left .side-block:nth-child(1) { background: #8b5cf6; }
+    .side-left .side-block:nth-child(2) { background: #fb7185; }
+    .side-left .side-block:nth-child(3) { background: #6366f1; }
+
+    .side-right .side-block:nth-child(1) { background: #f97316; }
+    .side-right .side-block:nth-child(2) { background: #ef4444; }
+    .side-right .side-block:nth-child(3) { background: #db2777; }
+
+    @media (max-width: 768px) {
+      .grid-sides {
+        grid-template-columns: 1fr;
+      }
+      .side-left, .side-right {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>matsmz</h1>
+    <p class="subheading">développeur fullstack // banques et fintec</p>
+    <ul>
+      <li>HTML / CSS / Bootstrap</li>
+      <li>JavaScript / React / React Native</li>
+      <li>PHP / MySQL / Symfony</li>
+      <li>Git / Docker</li>
+      <li>OSINT / Analyse SOC</li>
+      <li>Méthodologie Agile / Scrum</li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="metier-box" id="finance">
+      <h2>Finance & Réglementation</h2>
+      <div class="metier-content">
+        <ul>
+          <li>Réglementation bancaire, assurantielle et financière (AMF, 2025)</li>
+          <li>Risques pays, responsabilité juridique, déontologie (LCB-FT)</li>
+          <li>ESG et finance durable (AMF, 2025)</li>
+        </ul>
       </div>
-    
-      <footer class="footer">
-        <nav id="footer-nav">
-          <a href="#" class="current">portfolio</a>
-          <a href="mailto:mathieu.smolarz@gmail.com">contact</a>
-          <a href="https://www.linkedin.com/in/mathieu-smz-905b1197/">linkedIn</a> 
-        </nav>
-      </footer>
-    
+    </section>
+
+    <section class="metier-box" id="conformite">
+      <h2>Conformité & Cybersécurité</h2>
+      <div class="metier-content">
+        <ul>
+          <li>RGPD, DPO, sécurité des données (CNIL)</li>
+          <li>Analyse SOC, OSINT, gestion des incidents</li>
+          <li>Certifié <em>Advanced Cyber Graduate</em> – Riot, 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="metier-box" id="techno">
+      <h2>Technologies & Innovation financière</h2>
+      <div class="metier-content">
+        <ul>
+          <li>Blockchain, cryptomonnaies, DeFi</li>
+          <li>Web3.0 et applications décentralisées</li>
+          <li>Intégration d’outils IA dans les environnements métier</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="grid-sides">
+      <div class="side-left">
+        <div class="side-block">Développement Web & Mobile<br><small>Reacteur – 2020</small></div>
+        <div class="side-block">Cybersécurité / Fullstack<br><small>M2i & Dawan – 2021</small></div>
+        <div class="side-block">Géopolitique / Numérique<br><small>IRIS & GEM – 2014-2015</small></div>
+      </div>
+
+      <div></div>
+
+      <div class="side-right">
+        <div class="side-block">Mata Capital<br><small>Fullstack Symfony – 2021-2025</small></div>
+        <div class="side-block">Okate<br><small>Dev junior – 2020</small></div>
+        <div class="side-block">French Pulp<br><small>Éditeur / Directeur littéraire</small></div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://github.com/Mat-Smz" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/mathieusmolarz" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 matsmz</p>
+  </footer>
 </body>
 </html>
